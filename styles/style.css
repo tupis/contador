@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root{
+    /*Colors*/
+    --yellow: #FACF40;
+    --gray: #878884;
+    --gray-weakness: #acabab;
+    --black: #000;
+    --white: #fff;
+    /*Fonts*/
+    --font: 'Roboto', sans-serif;
+}
+
+/*Geral*/
+
+.portifolio{
+    background-color: var(--yellow);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+body{
+    font-family: var(--font);
+    background-color: var(--black);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center
+}
+
+/*Pagina Inicial*/
+
+.input-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 70px auto; /*200px*/
+}
+
+.hide-input-data{
+    display: none;
+}
+
+.input-data > h1{
+    font-size: 5em;
+    font-weight: 500;
+    color: var(--yellow);
+    padding-bottom: 20px;
+}
+
+.input-data > p{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    color: var(--gray-weakness)
+}
+
+.input-data > button{
+    margin-top: 15px;
+    height: 40px;
+    width: 250px;
+    display: block;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 1.2em;
+    background-color: var(--yellow);
+    cursor: pointer;
+
+    transition: 0.7s;
+}
+
+.input-data > button:hover{
+    outline: 1px solid var(--yellow);
+    background-color: transparent;
+    color: var(--yellow);
+}
+
+    /*Input Button*/
+
+.input-data > ::-webkit-calendar-picker-indicator{
+    background: transparent;
+}
+
+.input-data > input{
+    align-self: center;
+    height: 40px;
+    width: 250px;
+    color: var(--gray-weakness);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--gray);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*Contador*/
+.counter{
+    display: none;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 300px;
+    margin: 200px auto;
+}
+
+.show-counter{
+    display: flex;
+}
+
+.counter > nav, h1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter nav p{
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.counter nav button{
+    font-size: 1.1em;
+    font-weight: bolder;
+    border-radius: 20px;
+    width: 100px;
+    background-color: var(--yellow);
+    cursor: pointer;
+
+    transition: 0.7s;
+}
+
+.counter nav button:hover{
+    background-color: transparent;
+    outline: 1px solid var(--yellow);
+    color: var(--yellow)
+}
+
+.counter p{
+    color: var(--yellow);
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.counter h1{
+    color: var(--gray);
+    padding: 40px 0px;
+    font-size: 3.5em;
+    font-weight: 600;
+}
+
+.outputs{
+    text-align: center;
+}
+
+.output{
+    font-size: 5em;
+    margin: 0px 30px;
+    color: var(--white);
+}
+
+.counter-numbers{
+    display: flex;
+    justify-content: center;
+}
