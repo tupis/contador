@@ -15,22 +15,17 @@ const seconds = document.getElementById("seconds");
 // ano - mes - dia T hora - minutos - segundos UTF -03:00
 //YYYY-MM-DDTHH:MM:SS-03:00
 let inputDate;
-let stringDate = `${inputDate}T00:00:00-03:00`
+let stringDate = `${inputDate}T00:00:00-03:00`;
 
 function takeDate(){
     const date = new Date();
-    
-    const year = date.getFullYear();
-
     const inputDateButton = document.getElementById("date").value;
-    const currentDate = new Date();
-    currentDate.setMinutes(30);
-    /* inputDate = "2022-02-12" */    inputDate = inputDateButton;
-    /* stringDate = `${inputDate}` */ stringDate = `${inputDateButton}T00:00:00-03:00`
     
-    /* let inputYear = Number(inputDate.toString().slice(0,4)) */; let inputYear = Number(inputDateButton.toString().slice(0,4));
+    inputDate = inputDateButton;
+    stringDate = `${inputDateButton}T00:00:00-03:00`;
     
-    if(currentDate < new Date(`${date.getFullYear()}-${date.getMonth()}-${date.getDate()}T00:00:00-03:00`)){
+    
+    if(date > new Date(stringDate)){
         window.alert("por favor insira uma data válida");
     }else{
         inputDataElement.classList.toggle("hide-input-data")
