@@ -1,4 +1,4 @@
-# Projeto Cordel
+# Contador
 
 Faz a contagem regressiva em dias, horas, minutos e segundos para uma data especificada.
 
