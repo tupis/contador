@@ -18,11 +18,11 @@ Etapas:
 
 1. Clone este repositório
 ```
-$ git clone https://github.com/tupis/projeto-cordel.git
+$ git clone https://github.com/tupis/contador.git
 ```
 2. Acesse a pasta do projeto no terminal/cmd
 ```
-$ cd projeto-cordel
+$ cd contador
 ```
 3. Inicialize o html
 ```
